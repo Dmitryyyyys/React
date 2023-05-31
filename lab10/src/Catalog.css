@@ -1,0 +1,85 @@
+.fill {
+    margin-left: 5px;
+    height: 30px;
+    letter-spacing: 1px;
+    padding: 1px 50px 1px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    border-color: white;
+    font-weight: bold;
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #c804cf;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  
+.divBut {
+    display: flex;
+    padding-left: 20px;
+    margin: auto;
+    width: 600px;
+    margin-top: 40px;
+}
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(26,54,144,1) 61%);
+}
+.one_good{
+    color:white;
+    
+}
+
+.search{
+  color:white;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+
+.inner{
+  margin-top: 10px;
+}
+
+label{
+  color: white;
+}
+
+
+#inp2 {
+  background-color: #f2f2f2;
+  color: #333333;
+  border: 1px solid #cccccc;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+  margin-top: 15px;
+}
+
+#inp2:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Rest of the React component code goes here */
